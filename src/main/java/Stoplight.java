@@ -27,8 +27,7 @@ public class Stoplight {
         if (!state){
             throw new IllegalStateException("Trying to switch colors on a stoplight that's off!");
         } else {
-//            System.out.println(colorIndex);
-//            System.out.println(Colors.values().length-1);
+
             colorIndex = (colorIndex + 1) % Colors.values().length;
 
         }
@@ -39,7 +38,7 @@ public class Stoplight {
         if (!state) {
             return "Stoplight is off.";
         } else {
-            System.out.println(colorIndex);
+
             return "Color: " + colors.get(colorIndex);
         }
     }
